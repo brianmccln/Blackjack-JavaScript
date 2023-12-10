@@ -7,7 +7,8 @@ const chipsDiv = document.getElementById('chips-div');
 const betMenu = document.getElementById('bet-menu');
 betMenu.addEventListener('change', showChips);
 const moneySpan = document.getElementById('money');
-let betAmt = 15, money = 500;
+let betAmt = 15;
+money = 5000;
 
 // show chips function needs to:
 function showChips() {
