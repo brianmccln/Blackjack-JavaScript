@@ -1,4 +1,9 @@
-// Blackjack from Scatch in Vanilla JS
+// Blackjack from Scatch in Vanilla JS (no jquery, no OOP)
+// deal(), hit(), stand(), evalWinner(), resetBtns() and updateMoney() functions
+// deal(), hit() and stand() run when user clicks DEAL, HIT and STAND buts 
+// deal(), hit() and stand() also run or on "d", "s" and "h" key press
+// bet() function externalized to bet-chips.js file since game can be 
+// played with no chips / betting
 
 // get the necessary DOM elements:
 const playerCardsDiv = document.getElementById('player-cards-div');
