@@ -1,0 +1,174 @@
+body {
+    background-image: url('../images/blackjack-table.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #555;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #111;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    height: 65vh;
+}
+
+img {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    transform: perspective(80px) rotateX(10deg);   
+}
+
+/* make the dealer cards slightly smaller to make them appear farther away */
+#dealer-cards-div img {
+    width: 105px;
+    height: "auto";
+    margin-bottom: 0px;
+}
+
+#player-cards-div {
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+/* make the dealer and player card divs visible */
+#dealer-cards-div, #player-cards-div {
+    /* border: 3px dashed orange; */
+    width: 1000px;
+    margin: 10px auto;
+    height: 200px;
+    padding: 10px;
+}
+
+#player-score-span, #dealer-score-span {
+    /* border: 2px dashed yellow; */
+}
+
+#split-cards-box {
+    margin-bottom: 80px;
+    position: absolute;
+    bottom: 200px;
+    /* border: 7px dashed orange; */
+    z-index: 3;
+    left: 350px;
+    padding: 0;
+}
+
+/* permanent properties of buttons regardless 
+of whether they are enabled or disabled */
+button {
+    width: 100px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;    
+    margin: 1rem 0 0 1rem;
+    color: white;
+    background-color: #464;
+}
+
+.enabled-btn {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.enabled-btn:hover {
+    background-color: #494;
+}
+
+.disabled-btn {
+    opacity: 0.3;
+    cursor: none;
+}
+
+.disabled-btn:hover {
+    background-color: #464;
+}
+
+div {
+    padding: 1.5rem;
+    min-width: 50%;
+    height: 225px;
+    border-radius: 1.5rem;
+}
+
+div image {
+    height: 90%; 
+}
+
+span {
+    color: white;
+    width: 300px;
+    padding: 0.65rem;
+    font-family: sans-serif;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h1, h2 {
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    bottom: 147px;
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+}
+
+h2 { /* feedback appears in h2 */
+    left: 35%;
+    bottom: 10%;
+    text-align: center;
+    /* border: 2px dashed cyan; */
+}
+
+input, select {
+    width: 150px; 
+    padding: 3px 6px; 
+    font-size: 21px; 
+    font-weight: bold; 
+    color: #555; 
+    border-radius: 4px; 
+    text-align: center;
+    margin: 0;
+}
+
+#chips-div {
+    position: absolute;
+    left: 0px;
+    bottom: 500px;
+    /* background-color: aqua; */
+    /* border: 1px solid #00FFFF50; */
+    min-width: 0%;
+    width: 350px;
+    height: 100px;
+    z-index: 1;
+    border-radius: 58px;
+    padding: 0px;
+    margin: 30px;
+    background-image: none;
+    /* border: 2px dashed cyan; */
+    transform: rotate(20deg);
+}
+
+#money {
+    color: #fff; 
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px dashed cyan;
+}
+
+.chipper {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 0;
+    transition: left .3s ease-out;
+}
