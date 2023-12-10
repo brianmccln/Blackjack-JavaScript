@@ -31,4 +31,4 @@ Aces are worth 11 or 1, depending on which is more advantagous to the hand.
 **timing for game play**  s
     - **setInterval()** and **setTimeout()** are used to slow down the game so all the cards and feedback results aren't just all outputted at once, which would be no fun.
 Speaking of fun, enjoy playing this Blackjack game and figuring out how the JS all works!    
-
+**buttons and select menu diabled / enabled** in order to prevent user from clicking on the wrong buttons, such as the deal button while a game is already in progress, or the hit button after the player score reaches 21, the buttons and select menu are enabled/disabled at the optimal times. The bet menu is also disabled once the deal button is clicked, since bets must be placed before the deal begins.  
